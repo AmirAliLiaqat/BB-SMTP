@@ -28,3 +28,11 @@ if( !defined( 'PLUGIN_URL' ) ) {
 if( !defined( 'PLUGIN' ) ) {
     define( 'PLUGIN', plugin_basename( __FILE__ ) );
 }
+
+// Creating class for the plugin all settings.
+class BBSmtp {
+
+    
+
+}
+$bbSmtp = new BBSmtp();
