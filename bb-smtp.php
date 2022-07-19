@@ -32,7 +32,14 @@ if( !defined( 'PLUGIN' ) ) {
 // Creating class for the plugin all settings.
 class BBSmtp {
 
-    
+    function __construct() {
+        add_action( 'admin_enqueue_scripts', array( $this, 'enqueue' ) );
+    }
+
+    function enqueue() {
+        wp_enqueue_style( 'bb-smtp-style', PLUGIN_URL . 'assets/css/style.css' );
+        wp_enqueue_script( 'bb-smtp-script', PLUGIN_URL . 'assets/js/script.js' );
+    }
 
 }
 $bbSmtp = new BBSmtp();
