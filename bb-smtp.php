@@ -34,11 +34,18 @@ class BBSmtp {
 
     function __construct() {
         add_action( 'admin_enqueue_scripts', array( $this, 'enqueue' ) );
+        add_filter( 'plugin_action_links_' . PLUGIN, array( $this, 'action_links' ) );
     }
 
     function enqueue() {
         wp_enqueue_style( 'bb-smtp-style', PLUGIN_URL . 'assets/css/style.css' );
         wp_enqueue_script( 'bb-smtp-script', PLUGIN_URL . 'assets/js/script.js' );
+    }
+    
+    function action_links( $links ) {
+        $settings_link = '<a href="admin.php?bb_smtp">Settings</a>';
+        array_push( $links, $settings_link );
+        return $links;
     }
 
 }
