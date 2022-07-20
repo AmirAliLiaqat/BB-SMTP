@@ -35,11 +35,13 @@ class BBSmtp {
     function __construct() {
         require_once 'inc/Enqueue.php';
         require_once 'inc/ActionLinks.php';
+        require_once 'inc/MenuPages.php';
     }
 
     function register() {
         add_action( 'admin_enqueue_scripts', array( 'Enqueue', 'enqueue' ) );
         add_filter( 'plugin_action_links_' . PLUGIN, array( 'ActionLinks', 'action_links' ) );
+        add_action( 'admin_menu', array( 'MenuPages', 'add_menu_pages' ) );
     }
 
 }
