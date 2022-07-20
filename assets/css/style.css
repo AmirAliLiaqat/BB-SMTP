@@ -1,0 +1,15 @@
+.wrap{
+    font-style: italic;
+    margin:20px;
+}
+
+.main-heading{
+    background: #000;
+    color: #fff;
+    text-align: center;
+}
+
+.wrap-content{
+    background: #fff;
+    padding:20px;
+}
