@@ -17,6 +17,6 @@ class MenuPages {
     }
         
     public static function settings_html() {
-        echo '<h1>Hello Settings</h1>';
+        require_once PLUGIN_PATH . 'templates/settings.php';
     }
 }
