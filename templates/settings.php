@@ -1,8 +1,8 @@
-<div class="warp">
-    <h1 class="main-heading">BB SMTP</h1>
-    <div class="wrap-content">
-        <table>
-            <thead>
+<div class="wrap">
+    <h1 class="main-heading">Settings</h1>
+    <div class="wrap-content p-0">
+        <table class="table table-bordered table-hover text-center">
+            <thead class="bg-dark text-white">
                 <tr>
                     <th>ID</th>
                     <th>Name</th>

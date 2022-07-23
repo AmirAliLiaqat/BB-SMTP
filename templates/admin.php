@@ -1,6 +1,5 @@
-
 <div class="wrap">
-    <h1 class="main-heading">BB SMTP</h1>
+    <h1 class="main-heading">Dashboard</h1>
     <?php settings_errors(); ?>
     <div class="wrap-content">
         <form action="options.php" method="post">
